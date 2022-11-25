@@ -23,6 +23,7 @@ function App() {
   }
 
   function handleDeleteToy(toyToDelete) {
+    console.log(toyToDelete)
     const updatedToys = toys.filter((toy) => toy.id !== toyToDelete.id);
     setToys(updatedToys);
   }

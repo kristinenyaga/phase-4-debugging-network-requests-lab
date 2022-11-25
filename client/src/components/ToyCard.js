@@ -14,6 +14,7 @@ function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
   }
 
   function handleLikeClick() {
+    console.log(toy)
     const updateObj = {
       likes: toy.likes + 1,
     };
